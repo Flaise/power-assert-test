@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "power-assert-test",
+  "version": "0.0.0-test.0",
+  "devDependencies": {
+    "espower-babel": "3.3.0",
+    "mocha": "2.3.3",
+    "power-assert": "1.1.0"
+  },
+  "scripts": {
+    "test-works": "./node_modules/mocha/bin/mocha --compilers js:espower-babel/guess",
+    "test-broken": "./node_modules/mocha/bin/mocha --compilers js:espower-babel/guess __tests__"
+  },
+  "engines": {
+    "node": "4.1.1",
+    "npm": "3.3.5"
+  }
+}
